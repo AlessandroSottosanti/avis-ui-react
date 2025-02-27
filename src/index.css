@@ -1,0 +1,86 @@
+/* AppNavbar.css */
+
+/* Colore di sfondo della navbar - blu AVIS */
+.navbar {
+  background-color: #003D73;
+}
+
+/* Colore dei link - bianco */
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+/* Colore del brand (logo AVIS) */
+.navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Colore hover per i link */
+.navbar .nav-link:hover {
+  color: #ffcc00 !important; /* Giallo o colore alternativo */
+}
+
+/* Contenitore dell'immagine */
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Imposta l'altezza dell'immagine */
+  margin-right: 10px; /* Aggiungi un po' di spazio tra il logo e il nome */
+}
+
+.navbar-brand img {
+  max-height: 100%; /* Fa sì che l'immagine non esca fuori dal contenitore */
+  max-width: 100%;  /* Fa sì che l'immagine sia scalata correttamente */
+}
+
+/* AppFooter.css */
+
+/* Colore di sfondo scuro */
+footer {
+  background-color: #003D73;
+}
+
+/* Colore del testo */
+footer .text-white {
+  color: #ffffff !important;
+}
+
+/* Colore dei link al passaggio del mouse */
+footer .text-white:hover {
+  color: #ffcc00 !important;
+}
+
+/* Aggiungi spazio tra i vari elementi */
+footer .py-4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Aggiungi uno spazio tra le sezioni del footer */
+footer .list-unstyled {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.bg-custom {
+  background-color: #003D73;
+}
+
+.hover {
+  cursor: pointer;
+}
