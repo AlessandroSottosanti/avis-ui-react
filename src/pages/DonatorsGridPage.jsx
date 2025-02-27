@@ -63,7 +63,7 @@ function DonatorsGridPage() {
 
   return (
     <main>
-      <div className="mx-2 mt-4">
+      <div className="mx-3 my-5">
         {/* Sezione Filtri */}
         <DonatoriFilter onFilterChange={handleFilterChange} />
 
