@@ -24,6 +24,7 @@ function DonatoriFilter({ onFilterChange }) {
     });
   };
 
+  console.log(gruppoSanguigno);
   return (
     <div className="card mb-4 shadow-sm border-0 rounded">
       <div className="card-header text-white" style={{ backgroundColor: "#003D73" }}>

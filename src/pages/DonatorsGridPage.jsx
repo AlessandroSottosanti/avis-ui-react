@@ -24,14 +24,14 @@ function DonatorsGridPage() {
   const getDonatori = () => {
     const { nome, cognome, gruppoSanguigno } = filters;
     let query = `${apiUrl}/donatori?`;
-
-    // Aggiungi i filtri all'URL
-    if (nome) query += `nome=${nome}&`;
-    if (cognome) query += `cognome=${cognome}&`;
-    if (gruppoSanguigno) query += `gruppoSanguigno=${gruppoSanguigno}&`;
-
+  
+    // Aggiungi i filtri all'URL con encodeURIComponent
+    if (nome) query += `nome=${encodeURIComponent(nome)}&`;
+    if (cognome) query += `cognome=${encodeURIComponent(cognome)}&`;
+    if (gruppoSanguigno) query += `gruppoSanguigno=${encodeURIComponent(gruppoSanguigno)}&`;
+  
     query = query.slice(0, -1); // Rimuovi l'ultimo "&" extra
-
+  
     console.log(query);
     return axios
       .get(query)
@@ -44,7 +44,7 @@ function DonatorsGridPage() {
         throw error;
       });
   };
-
+  
   useEffect(() => {
     getDonatori();
   }, [filters]); // Ricarica i dati ogni volta che i filtri cambiano
