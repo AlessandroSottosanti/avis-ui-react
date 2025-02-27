@@ -35,15 +35,11 @@ function AppNavbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/donatores">
+              <NavLink className="nav-link" to="/donators">
                 Donatori
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
-                Contatti
-              </NavLink>
-            </li>
+            
           </ul>
         </div>
       </div>

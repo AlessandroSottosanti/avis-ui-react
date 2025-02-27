@@ -5,6 +5,7 @@ function DonatoriFilter({ onFilterChange }) {
     const [cognome, setCognome] = useState("");
     const [gruppoSanguigno, setGruppoSanguigno] = useState("");
 
+    
     const handleFilterChange = () => {
         onFilterChange({
             nome,
@@ -86,10 +87,10 @@ function DonatoriFilter({ onFilterChange }) {
                     </div>
                 </div>
 
-                <div className="row mt-2 mx-1">
+                <div className="row mt-2 mx-1 gap-1">
                     {/* Bottone per applicare i filtri */}
                     <button
-                        className="btn btn-primary col-8"
+                        className="btn btn-primary col-12 col-sm-7"
                         onClick={handleFilterChange}
                     >
                         Applica Filtri
@@ -97,7 +98,7 @@ function DonatoriFilter({ onFilterChange }) {
                     <div className="col-1"></div>
                     {/* Bottone per resettare i filtri */}
                     <button
-                        className="btn btn-secondary ge-1 col-3"
+                        className="btn btn-secondary ge-1 col-12 col-sm-3"
                         onClick={handleResetFilters}
                     >
                         Resetta Filtri

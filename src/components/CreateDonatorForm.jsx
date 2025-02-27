@@ -1,9 +1,13 @@
-function CreateDonatorForm({ donatore, gruppiSanguigni, onChange, onSubmit }) {
+
+function CreateDonatorForm({ donatore, gruppiSanguigni, onChange, onSubmit}) {
+
     return (
         <div className="container mt-5">
             <h2 className="text-center">Aggiungi Nuovo Donatore</h2>
             <div className="card shadow-sm p-4">
                 <form onSubmit={onSubmit}>
+                    
+
                     <div className="mb-3">
                         <label className="form-label">Nome</label>
                         <input
