@@ -30,8 +30,8 @@ function AppNavbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
-                Chi Siamo
+              <NavLink className="nav-link" to="/create">
+                Aggiungi Donatore
               </NavLink>
             </li>
             <li className="nav-item">
